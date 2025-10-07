@@ -593,8 +593,8 @@ handshake
 
 
 hsr
-
-
+"High-Avalibility Seamless Redundancy" 
+Whenever a ethernet data frame is sent out from a hsr enabled device (a ring network of doubly attached nodes) it is duplicated and also sent the oposite direction. This allows for redundancy with no down time if the frame fails. 
 
 
 
