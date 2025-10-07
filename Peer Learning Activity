@@ -887,7 +887,7 @@ netfilter/ipvs
 
 
 netlabel
-
+Allows explicit packet labeling support.
 
 
 
@@ -901,7 +901,7 @@ netlabel
 
 
 netlink
-
+Socket monitoring interface.
 
 
 
@@ -915,7 +915,7 @@ netlink
 
 
 netrom
-
+Protocol used for radio packet communication. 
 
 
 
@@ -929,7 +929,7 @@ netrom
 
 
 nfc/hci
-
+"Near Feild Communication" 
 
 
 
