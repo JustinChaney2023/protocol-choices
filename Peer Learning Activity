@@ -129,7 +129,7 @@ Whenever a ethernet data frame is sent out from a hsr enabled device (a ring net
 
 
 ieee802154
-
+A standard for small wireless personal area networks with a maximum data rate of 250 kb/s. 
 
 
 
@@ -143,7 +143,7 @@ ieee802154
 
 
 ife
-
+Adds support for the IFE encaplsulation protocol. 
 
 
 
@@ -157,7 +157,7 @@ ife
 
 
 ipv4
-
+ Handles IP assignment and configuration on a network and allows IP forwarding and tunneling. * 
 
 
 
