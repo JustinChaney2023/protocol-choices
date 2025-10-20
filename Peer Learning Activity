@@ -237,360 +237,105 @@ These should be summaries and thoughts from your own understanding of the implem
 
 6lowpan
 
-low power ipv6 protocol
-
-
-
-
+6lowpan provides support and IPv6 compression IEEE.
 
 802
 
-
-
-
-
-
+Security at the switch/Wi-Fi port. When you plug in, it checks who you are before letting your traffic on the LAN.
 
 8021q
 
-
-
-
-
-
-
-
-
-
-
+Adds VLAN tags to Ethernet frames. One cable can carry multiple “virtual” networks that stay separate.
 
 9p
 
-
-
-
-
-
+Makes remote resources look like local files. You can mount services/devices and use them with normal file reads/writes.
 
 Appletalk
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Apple’s older networking so Macs could find and share stuff on a local network. Mostly legacy now.
 
 Atm
 
-
-
-
-
-
-
-
-
-
-
-
-
+High-speed networking using fixed-size cells. Aimed at steady, predictable traffic on WANs/LANs
 
 ax25
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Point-to-point packet radio. Can carry other simple protocols
 
 batman-adv
 
-
-
-
-
-
-
-
-
-
-
-
-
+“Better Approach To Mobile Ad-hoc Networking.” A kernel Layer-2 mesh that forwards across multiple hops, wired or wireless.
 
 bluetooth/bnep
 
-
-
-
-
-
-
-
-
-
-
-
-
+Bnep is used for ethernet emulation as a layer on top of bluetooth. Required for bluetooth PAN.
 
 bluetooth/cmtp
 
-
-
-
-
-
-
-
-
-
-
-
-
+Cmtp is a transport layer used for CAPI messages. Bluetooth common ISDN access profile requires it. 
 
 bluetooth/hidp
 
-
-
-
-
-
-
-
-
-
-
+HIDP is the transport layer for HID reports. Human interface device points in bluetooth require this. 
 
 bluetooth/rfcomm
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+RFCOMM is used to make a connection oriented stream transport. Some bluetooth applications that use dialup networking and obex all require this. 
 
 bpf
 
-
-
-
-
-
-
-
-
-
-
-
+Tiny programs the kernel can run to filter/observe packets or enforce simple rules. Handy without writing full drivers.
 
 bridge/netfilter
 
-
-
-
-
-
-
-
-
-
-
+NETFILTER is a configuration that utilizes INET and NETFILTER. This implementation allows the user to classify packets using the NETFILTER infrastructure. NETFILTER keeps track of what packets have moved through a machine. This is primarily used to increase the accuracy of packet filtering. 
 
 caif
 
-
-
-
-
-
-
-
-
-
-
-
-
+CAIF stands for communication CPU to application CPU interface, its a packet based connection oriented mux protocol for use on certain modem platforms.
 
 can
 
-
-
-
-
-
-
-
-
-
-
-
+CAN stands for controller area network. Its a networking technology used in automation, embedded devices and automotive fields. 
 
 ceph
 
-
-
-
-
-
-
-
-
-
-
-
-
+Ceph is a scalable file system. Its a cluster that has object block and file interface features.
 
 core
 
-
-
-
-
-
-
-
-
-
-
-
+Shared networking plumbing in the kernel: sockets, buffers, and helpers that everything else uses.
 
 dcb
 
-
-
-
-
-
-
-
-
-
-
-
+Data Center Bridging. Ethernet tweaks so different traffic types (like storage) get the right treatment and don’t drop.
 
 dccp
-
-
-
-
-
-
-
-
-
-
-
-
+DROPPED
 devlink
 
-
-
-
-
-
-
-
-
-
-
-
+Structured control path for smart NICs/switch chips. Query settings, update firmware, and grab detailed stats.
 
 dns_resolver
 
-
-
-
-
-
-
-
-
-
-
-
+This implementation is used to query DNS servers for information. In CIFS, this is used to resolve UNC hostname elements to an IP address. In AFSDB records, this is used to locate a cell’s volume location database servers when performing a DNS query.
 
 dsa
 
-
-
-
-
-
-
-
-
-
-
-
+Distributed Switch Architecture. Lets Linux drive embedded switch chips and expose real per-port interfaces.
 
 ethernet
 
-
-
-
-
-
-
-
-
-
-
-
+The basic Layer-2 frame/MAC world most networks use. VLANs and lots of other features sit on top of it.
 
 ethtool
 
-
-
-
-
-
-
-
-
-
-
-
+Kernel interface for NIC knobs. Check speed/duplex, offloads, queues, pause frames, and driver/firmware info.
 
 handshake
 
-
-
-
-
-
-
-
-
-
-
-
+Kernel helper for doing standard crypto/key-exchange handshakes, instead of every driver rolling its own.
 
 hsr
 "High-Avalibility Seamless Redundancy" 
