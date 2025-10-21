@@ -125,7 +125,7 @@ Outlines a standard protocool for small wireless personal area networks. Maximum
 
 ife
 
-Adds support for the IFE encaplsulation protocol. 
+Adds support for the IFE encaplsulation protocol. This protocool allows for additonal information to be passed with a packet to another point on the network.
 
 ipv4
 
@@ -133,7 +133,7 @@ In charge of routing network packets as well as handling IP assignment and confi
 
 ipv6/ila
 "Identifier Locator Adressing"
-Splits a network objects network identifier from its specified location. 
+Splits a network objects network identifier from its specified location. The location is then adressed. 
 
 ipv6/netfilter
 
@@ -142,12 +142,12 @@ Kerel framework for packet filtering NAT and other related generic handlers. All
 iucv
 
 "inter-user communication VM"
-Used for highspeed communication between VMs on the same system as if they were connected to a virtual lan. 
+Used for highspeed communication between VMs on the same system as if they were connected by a virtual lan. 
 
 kcm
 
 "Kernel Connection Multiplexor"
-Allows multiplexed messaging over TCP connections. 
+Allows multiplexed messaging over TCP connections.
 
 key
 
