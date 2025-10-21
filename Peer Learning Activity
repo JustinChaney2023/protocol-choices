@@ -149,7 +149,6 @@ kcm
 "Kernel Connection Multiplexor"
 Allows multiplexed messaging over TCP connections. 
 
-
 key
 
 Adds a implementation of PF_KEYv2 sockets. Used for establishing network security parameters for application network traffic. 
@@ -161,19 +160,22 @@ Allows trasnparent packet tunneling across public networks. Mainly used in congu
 
 l3mdev
 
-
+"L3 Master device"
+Gives hardware devices acesses to layer 3 (l3) routing functionality if offloaded. 
 
 lapb
 
-
+"Link Access Procedure, Balanced"
+Allows highspeed relliable host to host connection for data frame exhanging between 2 machines over ethernet. 
 
 llc
 
-
+"Logical Link Control"
+IEEE standard for allowing network layer programs to use a common physical source. 
 
 mac80211
 
-
+Basic source for wireless network devie drivers. Follows famework standard as outlined by IEEE. 
 
 mac802154
 
@@ -181,19 +183,22 @@ Implements the IEEE standard for device handling on a network using the Media Ac
 
 mctp
 
-
+"Management Component Transport Protocol"
+Allows for communication between management controllers on the same machine. 
 
 mpls
 
-
+Legacy method for packet routing and tunneling through the use of lables to identify a packet. 
 
 mptcp
 
-
+"Multipath TCP"
+Allows for TCP connections over mutiple paths simultaniously. Allows both sending and reciveing of information over mutiple paths.
 
 ncsi
 
-
+"Network Controller Sideband Interface"
+Allows for NIC to communicate with the BMC directly using a lower speed sideband. 
 
 netfilter/ipset
 
