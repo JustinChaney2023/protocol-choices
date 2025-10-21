@@ -3,12 +3,12 @@ Code Review: Understanding network protocols implementation in Linux
 
 Justin Chaney
 OC
-Zayuhh
+Isaiah
 
 Student contributions:
 6lowpan-handshake # JUSTIN
 hsr-nfc # OC
-nsh-xfrm # ZAYUHH
+nsh-xfrm # ISAIAH
 
 # DNS RESOLVER PRESENTATION
 
@@ -147,7 +147,7 @@ Used for highspeed communication between VMs on the same system as if they were 
 kcm
 
 "Kernel Connection Multiplexor"
-Allows multiplexed messaging over TCP connections.
+Allows multiplexed messaging over TCP connections. 
 
 key
 
@@ -230,344 +230,135 @@ nfc/nci
 
 Defines a modern standard for how the computer communicates with a onboard NFC controller. This uses the NCI standard for NFC control and communication.
 
+
+
+
+
 nsh
 
-
-
-
-
-
-
-
-
-
-
+Handles the Network Service Header (NSH) protocol. It’s used to add extra information to packets so they can be sent through a specific chain of network functions.
 
 
 openvswitch
 
-
-
-
-
-
-
-
-
-
-
+This is the kernel part of Open vSwitch, which acts like a virtual network switch. It controls how packets move between virtual machines and handles advanced routing.
 
 
 packet
 
-
-
-
-
-
-
-
-
-
-
+Lets programs directly send and receive raw Ethernet packets. It’s used by tools that capture or analyze network traffic, like Wireshark.
 
 
 phonet
 
-
-
-
-
-
-
-
-
-
-
+Contains code for the Phonet protocol, which was used in older Nokia phones to let the operating system talk to the modem.
 
 
 psample
 
-
-
-
-
-
-
-
-
-
-
+Provides a simple way for the kernel to send sampled packets to user space. It’s useful for network monitoring or analysis.
 
 
 qrtr
 
-
-
-
-
-
-
-
-
-
-
+Implements Qualcomm’s IPC Router, which helps different parts of a Qualcomm chip (like the modem and processor) communicate.
 
 
 rds
 
-
-
-
-
-
-
-
-
-
-
+Handles Reliable Datagram Sockets, a fast messaging system used mostly in high-performance or clustered server environments.
 
 
 rfkill
 
-
-
-
-
-
-
-
-
-
-
+Manages turning wireless devices (like Wi-Fi or Bluetooth) on or off from software.
 
 
 rose
 
-
-
-
-
-
-
-
-
-
-
+Implements the ROSE protocol used in amateur radio networking. It lets radio operators send data packets over radio connections.
 
 
 rxrpc
 
-
-
-
-
-
-
-
-
-
-
+Provides a Remote Procedure Call (RPC) system that lets computers or kernel parts talk to each other over a network as if calling local functions.
 
 
 sched
 
-
-
-
-
-
-
-
-
-
-
+Contains the code for Linux’s traffic control system. It decides how outgoing packets are queued, prioritized, and sent.
 
 
 sctp
 
-
-
-
-
-
-
-
-
-
-
+Implements the Stream Control Transmission Protocol (SCTP), which is similar to TCP but supports multiple streams in a single connection.
 
 
 smc
 
-
-
-
-
-
-
-
-
-
-
+Shared Memory Communications lets systems transfer data faster using RDMA or shared memory instead of normal TCP.
 
 
 strparser
 
+Breaks continuous data streams (like TCP connections) into structured messages so protocols like TLS can process them.
 
 
+sunrpc
 
-
-
-
-
-
-
-
+Handles Sun’s Remote Procedure Call (RPC), used by NFS and other services to communicate between systems.
 
 
 sunrpc/auth_gss
 
-
-
-
-
-
-
-
-
-
-
+Adds secure authentication support (like Kerberos) for RPC.
 
 
 sunrpc/xprtrdma
 
-
-
-
-
-
-
-
-
-
-
+Makes RPC work efficiently over RDMA networks.
 
 
 switchdev
 
-
-
-
-
-
-
-
-
-
-
+Lets the kernel offload some network switching work to supported hardware switches to make them faster.
 
 
 tipc
 
-
-
-
-
-
-
-
-
-
-
+Transparent Inter-Process Communication is a network protocol for clusters. It helps different nodes in a cluster talk to each other easily.
 
 
 tls
 
-
-
-
-
-
-
-
-
-
-
+Adds kernel support for Transport Layer Security (TLS). This lets the kernel encrypt and decrypt traffic without user-space programs doing it.
 
 
 unix
 
-
-
-
-
-
-
-
-
-
-
+Implements UNIX domain sockets, which are used for communication between programs on the same computer.
 
 
 vmw_vsock
 
-
-
-
-
-
-
-
-
-
-
-
-
+Used by VMware to let virtual machines talk directly to their host without going through a normal network.
 
 
 wireless
 
-
-
-
-
-
-
-
-
-
-
+Contains the code that supports Wi-Fi and other wireless networking in Linux.
 
 
 x25
 
-
-
-
-
-
-
-
-
-
+Implements the older X.25 protocol, which was used for early wide-area networks and legacy systems.
 
 
 xdp
 
-
-
-
-
-
-
-
-
-
-
-
-
+The Express Data Path allows extremely fast packet processing directly inside the network driver using eBPF programs.
 
 
 xfrm
 
+Handles the framework for IPsec, which encrypts and secures IP network traffic.
