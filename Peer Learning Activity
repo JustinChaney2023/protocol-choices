@@ -121,7 +121,7 @@ Whenever a ethernet data frame is sent out from a hsr enabled device (a ring net
 
 ieee802154
 
-Outlines a standard for small wireless personal area networks with a maximum data rate of 250 kb/s. 
+Outlines a standard protocool for small wireless personal area networks. Maximum data rate allowed 250 kb/s.
 
 ife
 
@@ -133,7 +133,7 @@ In charge of routing network packets as well as handling IP assignment and confi
 
 ipv6/ila
 
-
+Splits a network identifier from its location by 
 
 ipv6/netfilter
 
@@ -153,7 +153,8 @@ key
 
 l2tp
 
-
+"Layer 2 Tunneling Protocool"
+Allows trasnparent packet tunneling across public networks. Mainly used in congujnction with other protocool.
 
 l3mdev
 
@@ -173,13 +174,14 @@ mac80211
 
 mac802154
 
-
+Implements the IEEE standard for device handling on a network using the Media Acess Control layer. Specifically made for low power consumption and data rates for small area communication.
 
 mctp
 
 
 
 mpls
+
 
 
 mptcp
@@ -196,11 +198,12 @@ netfilter/ipset
 
 netfilter/ipvs
 
-
+"IP VIrtual Server"
+Used as a load balancer for a server cluster allowing connection via a single IP. Properly handles incoming requests while efficently determining which clusters should handle which tasks.  
 
 netlabel
 
-Allows explicit packet labeling support.
+Allows explicit packet labeling support. Specifically used for secuirty labels pertaining to MAC polices.
 
 netlink
 
@@ -213,6 +216,7 @@ Netrom is a protocol used for radio packet communication.
 nfc/hci
 
 "Near Feild Communication" 
+Defines how the computer communicate with a onboard NFC controller using the HCI standard for NFC control. 
 
 nfc/nci
 
