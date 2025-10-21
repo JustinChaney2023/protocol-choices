@@ -132,24 +132,27 @@ ipv4
 In charge of routing network packets as well as handling IP assignment and configuration on a network. Allows IP forwarding and tunneling.
 
 ipv6/ila
-
-Splits a network identifier from its location by 
+"Identifier Locator Adressing"
+Splits a network objects network identifier from its specified location. 
 
 ipv6/netfilter
 
-
+Kerel framework for packet filtering NAT and other related generic handlers. Allows general interaction for IPV6 packets within the system.
 
 iucv
 
-
+"inter-user communication VM"
+Used for highspeed communication between VMs on the same system as if they were connected to a virtual lan. 
 
 kcm
 
+"Kernel Connection Multiplexor"
+Allows multiplexed messaging over TCP connections. 
 
 
 key
 
-
+Adds a implementation of PF_KEYv2 sockets. Used for establishing network security parameters for application network traffic. 
 
 l2tp
 
@@ -194,12 +197,12 @@ ncsi
 
 netfilter/ipset
 
-
+Allows the creation of a group of IPs to be made which can be used to apply network arguments to a large selection of IPs at once. 
 
 netfilter/ipvs
 
 "IP VIrtual Server"
-Used as a load balancer for a server cluster allowing connection via a single IP. Properly handles incoming requests while efficently determining which clusters should handle which tasks.  
+IPVS is used as a load balancer for a server cluster allowing connection via a single IP. Properly handles incoming requests while efficently determining which clusters should handle which tasks.  
 
 netlabel
 
@@ -207,20 +210,20 @@ Allows explicit packet labeling support. Specifically used for secuirty labels p
 
 netlink
 
-Socket monitoring interface.
+Netlink is a socket monitoring and information transfer interface for kernal modules. Can send information via IPC.
 
 netrom
 
-Netrom is a protocol used for radio packet communication. 
+Netrom is a protocol used for radio packet communication and networking.
 
 nfc/hci
 
 "Near Feild Communication" 
-Defines how the computer communicate with a onboard NFC controller using the HCI standard for NFC control. 
+Defines how the computer communicates with a onboard NFC controller using the HCI standard for NFC control. 
 
 nfc/nci
 
-
+Defines a modern standard for how the computer communicates with a onboard NFC controller. This uses the NCI standard for NFC control and communication.
 
 nsh
 
