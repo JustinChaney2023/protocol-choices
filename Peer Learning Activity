@@ -115,72 +115,23 @@ handshake
 Kernel helper for doing standard crypto/key-exchange handshakes, instead of every driver rolling its own.
 
 hsr
+
 "High-Avalibility Seamless Redundancy" 
 Whenever a ethernet data frame is sent out from a hsr enabled device (a ring network of doubly attached nodes) it is duplicated and also sent the oposite direction. This allows for redundancy with no down time if the frame fails. 
 
-
-
-
-
-
-
-
-
-
-
 ieee802154
-A standard for small wireless personal area networks with a maximum data rate of 250 kb/s. 
 
-
-
-
-
-
-
-
-
-
-
+Outlines a standard for small wireless personal area networks with a maximum data rate of 250 kb/s. 
 
 ife
+
 Adds support for the IFE encaplsulation protocol. 
 
-
-
-
-
-
-
-
-
-
-
-
 ipv4
- Handles IP assignment and configuration on a network and allows IP forwarding and tunneling. * 
 
-
-
-
-
-
-
-
-
-
-
+In charge of routing network packets as well as handling IP assignment and configuration on a network. Allows IP forwarding and tunneling.
 
 ipv6/ila
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -188,27 +139,7 @@ ipv6/netfilter
 
 
 
-
-
-
-
-
-
-
-
-
-
 iucv
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -216,27 +147,7 @@ kcm
 
 
 
-
-
-
-
-
-
-
-
-
-
 key
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -244,27 +155,7 @@ l2tp
 
 
 
-
-
-
-
-
-
-
-
-
-
 l3mdev
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -272,27 +163,7 @@ lapb
 
 
 
-
-
-
-
-
-
-
-
-
-
 llc
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -300,27 +171,7 @@ mac80211
 
 
 
-
-
-
-
-
-
-
-
-
-
 mac802154
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -328,41 +179,10 @@ mctp
 
 
 
-
-
-
-
-
-
-
-
-
-
 mpls
 
 
-
-
-
-
-
-
-
-
-
-
-
 mptcp
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -370,27 +190,7 @@ ncsi
 
 
 
-
-
-
-
-
-
-
-
-
-
 netfilter/ipset
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -398,83 +198,23 @@ netfilter/ipvs
 
 
 
-
-
-
-
-
-
-
-
-
-
 netlabel
+
 Allows explicit packet labeling support.
 
-
-
-
-
-
-
-
-
-
-
-
 netlink
+
 Socket monitoring interface.
 
-
-
-
-
-
-
-
-
-
-
-
 netrom
-Protocol used for radio packet communication. 
 
-
-
-
-
-
-
-
-
-
-
+Netrom is a protocol used for radio packet communication. 
 
 nfc/hci
+
 "Near Feild Communication" 
 
-
-
-
-
-
-
-
-
-
-
-
 nfc/nci
-
-
-
-
-
-
-
-
-
-
 
 
 
